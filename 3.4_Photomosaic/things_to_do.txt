@@ -1,0 +1,7 @@
+Companies are tasked with creating software to autonomously “stitch” the images together into a photomosaic.
+
+
+
+
+
+
