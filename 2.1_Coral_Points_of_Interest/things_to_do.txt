@@ -1,0 +1,11 @@
+Algorithm idea:
+
+divide all the grid squares and assign coordinate system to it
+
+for each square, find dominant colours. 
+
+each prop will have some sort of colour signature so identifying the object will be pretty easy.
+
+
+for the sponge prop (same colour as the floor probably), we will use an xml file to detect the circle edge 
+
