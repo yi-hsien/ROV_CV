@@ -7,10 +7,24 @@ MANUAL PART
 
 - drive the rov to the drive-by area
 
-AUTONOMOUS PART
+AUTONOMOUS PART I: Get image
 
 - detect the two blue edge lines, align the ROV
 - decrease elevation of rov so that blue edge lines are at the edge of FOV
 
 - start moving the rov forward
-- (TENTATIVE) homography, combining two images
+- camera now captures photos periodically, save them with numbered photos
+- homography, combining the photos to get one long image
+- camera stops taking photos after reaching the end (yellow edge)
+
+AUTONOMOUS PART II: Calculate pink gridlines and do colour stuff
+
+- the grids are 33 cm x 33 cm; or line detection
+- the two blue edges can be used to divide the grids by 3
+- perform dominant colour stuff for each grid
+(figure out how to do it for the two-box long coral-prop)
+(figure how to detect the sponge thing) 
+
+AUTONOMOUS PART III: Make the final diagram with all the props
+
+
