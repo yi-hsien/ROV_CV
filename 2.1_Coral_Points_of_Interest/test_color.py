@@ -2,11 +2,11 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread("crown_of_thorns_sea_star.png")
+img = cv2.imread("DNM65.png")
 average = img.mean(axis=0).mean(axis=0)
 pixels = np.float32(img.reshape(-1, 3))
 
-n_colors = 4
+n_colors = 5
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 200, .1)
 flags = cv2.KMEANS_RANDOM_CENTERS
 
