@@ -1,0 +1,16 @@
+17 February 2020 Notes
+
+PLAN FOR THIS TASK:
+
+
+MANUAL PART
+
+- drive the rov to the drive-by area
+
+AUTONOMOUS PART
+
+- detect the two blue edge lines, align the ROV
+- decrease elevation of rov so that blue edge lines are at the edge of FOV
+
+- start moving the rov forward
+- (TENTATIVE) homography, combining two images
