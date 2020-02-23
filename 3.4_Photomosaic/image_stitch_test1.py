@@ -18,6 +18,7 @@ import matplotlib.pyplot as plt
     convert each of the five faces of the box into arrays 
 """
 
+
 folders = glob.glob('*')
 print(folders)
 imagenames_list = []
