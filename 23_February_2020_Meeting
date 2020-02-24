@@ -1,0 +1,17 @@
+Arduino MEga Mini (Motor, SOlenoid/Claws, Lights, temperature data)
+
+
+Not Arduino:
+Power stuff for motor
+Camera digital --> goes to ethernet port to computer
+Camera analog --> 
+
+Raspberry Pi:
+
+Send to Arduino: Motor data
+
+Send to Laptop: Camera, (minimal amount of Sensor Data
+
+
+Ethernet cable:
+Switch on top, IP cameras, (laptop commands)
