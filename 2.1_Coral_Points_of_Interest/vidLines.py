@@ -39,7 +39,6 @@ cv2.setTrackbarPos('height_high','height',0)
 while(True):
     # first read a frame
     fr,frame = cap.read()
-
     # convert to gray scale and blur for better performance (less computation)
     grey_image = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     blur_gray = cv2.GaussianBlur(grey_image, (kernel_size,kernel_size), 0)
