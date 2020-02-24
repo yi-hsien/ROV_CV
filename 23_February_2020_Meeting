@@ -6,11 +6,15 @@ Power stuff for motor
 Camera digital --> goes to ethernet port to computer
 Camera analog --> 
 
+or
+
+6 IP cameras
+
 Raspberry Pi:
 
 Send to Arduino: Motor data
 
-Send to Laptop: Camera, (minimal amount of Sensor Data
+Send to Laptop: Camera, Sensor Data (which is not much)
 
 
 Ethernet cable:
