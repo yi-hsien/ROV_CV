@@ -2,12 +2,12 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread('coral_fragment.png')      # take image
+img = cv2.imread('face1.png')      # take image
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # convert BGR to RGB
 average = img.mean(axis=0).mean(axis=0)
 pixels = np.float32(img.reshape(-1, 3))
 
-n_colors = 3    # detects 3 dominant colours
+n_colors = 7    # detects 3 dominant colours
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 200, 1.0)
 flags = cv2.KMEANS_RANDOM_CENTERS
 
