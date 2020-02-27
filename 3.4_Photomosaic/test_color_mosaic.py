@@ -2,20 +2,12 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-<<<<<<< HEAD
 img = cv2.imread('face4.png')      # take image
-=======
-img = cv2.imread('face1.png')      # take image
->>>>>>> 99522edad66f9e2aa5638071901099159090f730
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # convert BGR to RGB
 average = img.mean(axis=0).mean(axis=0)
 pixels = np.float32(img.reshape(-1, 3))
 
-<<<<<<< HEAD
 n_colors = 10;    # detects 3 dominant colours
-=======
-n_colors = 7    # detects 3 dominant colours
->>>>>>> 99522edad66f9e2aa5638071901099159090f730
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 200, 1.0)
 flags = cv2.KMEANS_RANDOM_CENTERS
 

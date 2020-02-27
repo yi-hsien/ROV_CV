@@ -35,48 +35,5 @@ for image in imagenames_list:
     read_images.append(img)
 
 """
-<<<<<<< HEAD
   
 """
-=======
-    do colour shit or some shit
-    then match and parse images to one big image
-    print image
-    
-    
-    1 arduino mega mini for:
-     
-     ontrolling the six thrusters according to the data received from the
-    joystick.
-    •Receiving the PH, pressure, and temperature sensors data. 
-    Then, 
-    processing the data and sending it to the Co-Pilot on the Control Unitlaptop.
-    
-    •Sending the signal for triggering the solenoid responsible for the pneumatic 
-    arm function.
-    
-    •Sending the Pulse Width Modulation (PWM)signal and the directional 
-    signal for the two Cryton 10A 5-30v dual channel DC motor drivers that drive 4 DC 
-    motors. 
-    
-    These 4 dc motors are divided according to their functions as follows:•One 
-    is used for the main ROV DC arm.
-    
-    •Other two are used for the micro ROV and its tether 
-    roller.•The last one serves as turning gear for the pneumatic arm
-     
-     
-     
-     
-     the motors
-    LED lights
-    claw
-    1 camera for Front -> to computer, do CV stuff and spit back shit
-    1 camera for Down -> to computer, do CV stuff and spit back shit
-    joystick
-    
-    
-    1 camera for microROV?
-    
-"""
->>>>>>> 99522edad66f9e2aa5638071901099159090f730

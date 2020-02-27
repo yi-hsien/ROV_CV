@@ -15,6 +15,7 @@ print(imagenames_list)
 
 domList = []
 
+
 for p in imagenames_list:
     img = cv2.imread(p)      # take image
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # convert BGR to RGB
@@ -38,9 +39,9 @@ for p in imagenames_list:
     rows = np.int_(img.shape[0]*freqs)
 
     dom_patch = np.zeros(shape=img.shape, dtype=np.uint8)
+
     for i in range(len(rows) - 1):
         dom_patch[rows[i]:rows[i + 1], :, :] += np.uint8(palette[indices[i]])
-
     domList.append(dom_patch)
 ##    fig, (ax0, ax1) = plt.subplots(1, 2, figsize=(12,6))
 ##    ax0.imshow(avg_patch)
@@ -59,4 +60,21 @@ ax3.imshow(domList[3])
 ax4.imshow(domList[4])
 fig2.show()
 
+# add to the list of face colours the list of most common rgb values from each face
 
+yuh_list = []
+
+print(domList[0][130][0])
+yuh_list.append(domList[0][0][0])
+print(yuh_list)
+for i in range(len(domList)):
+    true_unique_rgbs = []
+    print("Printing unique RGB for side:" + str(i))
+    for j in range(len(domList[i])):
+        for k in range(len(domList[i][j])):
+            if domList[i][j][k].any() in true_unique_rgbs:
+                true_unique_rgbs.append(domList[i][j][k])
+                print(true_unique_rgbs)
+            else:
+                continue
+    print(true_unique_rgbs)
